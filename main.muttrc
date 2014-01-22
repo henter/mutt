@@ -56,7 +56,7 @@ set forward_quote                                       # include message in for
 set signature           = "$my_dir/signature.muttrc"    # the sig
 
 # sidebar settings
-set sidebar_visible     = no                            # start without sidebar
+set sidebar_visible     = yes                            # start without sidebar
 set sidebar_width       = 30                            # width of sidebar
 set sidebar_delim       = '|'                           # sidebar delimiter
 
@@ -115,7 +115,7 @@ send-hook . 'my_hdr Message-ID:<`date +"%Y%m%d%H%M%S"`.`uuidgen`.mhubig@imko.de>
 folder-hook . "push '<collapse-all>'"
 
 # my personal details and credentials
-source "$my_dir/credentials.muttrc"
+#source "$my_dir/credentials.muttrc"
 
 # my mailboxes
 source "$my_dir/mailboxes.muttrc"
@@ -124,7 +124,7 @@ source "$my_dir/mailboxes.muttrc"
 source "$my_dir/mailinglists.muttrc"
 
 # my alias file
-source $alias_file
+#source $alias_file
 
 # the solarized color scheme
 source "$my_dir/solarized-light-16.muttrc"
